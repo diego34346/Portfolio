@@ -1,4 +1,4 @@
-import Image from 'next/image';
+import Image from "next/legacy/image";
 import React from 'react';
 import pokemonImg from '@/assets/pokemon.png';
 import { RiRadioButtonFill } from 'react-icons/ri';

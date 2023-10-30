@@ -61,23 +61,23 @@ function Navbar() {
 
         <div>
           <ul style={{ color: `${linkColor}` }} className="hidden md:flex">
-            <li className="ml-10 text-sm uppercase hover:border-b">
+            <li className="ml-10 text-sm uppercase hover:border-b-2 hover:border-indigo-800">
               <Link href="/#start">Start</Link>
             </li>
 
-            <li className="ml-8 text-sm uppercase hover:border-b">
+            <li className="ml-8 text-sm uppercase hover:border-b-2 hover:border-indigo-800">
               <Link href="/#about">About</Link>
             </li>
 
-            <li className="ml-8 text-sm uppercase hover:border-b">
+            <li className="ml-8 text-sm uppercase hover:border-b-2 hover:border-indigo-800">
               <Link href="/#skills">Skills</Link>
             </li>
 
-            <li className="ml-8 text-sm uppercase hover:border-b">
+            <li className="ml-8 text-sm uppercase hover:border-b-2 hover:border-indigo-800">
               <Link href="/#projects">Projects</Link>
             </li>
 
-            <li className="ml-8 text-sm uppercase hover:border-b">
+            <li className="ml-8 text-sm uppercase border-b-2 border-[#ecf0f3] hover:border-b-2 hover:border-indigo-800">
               <Link href="/#contact">Contact</Link>
             </li> 
           </ul>
