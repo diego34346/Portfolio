@@ -9,7 +9,7 @@ function Presentation() {
     <div id="start" className="w-full h-screen text-center">
       <div className="max-w-[1240px] w-full h-full mx-auto p-2 flex justify-center items-center">
         <div>
-          <p className="uppercase text-sm tracking-widest text-gray-600">
+          <p className="uppercase text-sm tracking-widest text-gray-700">
             LET&#39;S BUILD SOMETHING TOGETHER
           </p>
           <h1 className="py-0 md:py-4 text-gray-700">
@@ -18,7 +18,7 @@ function Presentation() {
           <h1 className="py-0 md:py-2 text-gray-700">
             A Web Developer Full Stack
           </h1>
-          <p className="py-4 text-gray-600 sm:max-w-[70%] m-auto">
+          <p className="py-4 text-gray-700 sm:max-w-[70%] m-auto">
             I’m focused on building responsive front-end web applications
             integrating back-end technologies.
           </p>
