@@ -14,8 +14,9 @@ const pokemon = () => {
           layout='fill'
           objectFit='cover'
           src={pokemonImg}
-          alt='/'
+          alt='pokemon'
           priority={true}
+          rel="preload"
         />
         <div className='absolute top-[70%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-white z-10 p-2'>
           <h2 className='py-2'>Pokemon API</h2>
@@ -66,7 +67,7 @@ const pokemon = () => {
           </div>
         </div>
         <Link href='/#projects'>
-          <p className='underline cursor-pointer'>Back</p>
+          <p className='text-2xl cursor-pointer'>&lt;&lt; Back</p>
         </Link>
       </div>
     </div>

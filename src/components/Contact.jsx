@@ -14,7 +14,7 @@ function Contact() {
         </p>
         <h2 className="py-4">Get In Touch</h2>
         <div className="grid lg:grid-cols-5 gap-8">
-          <div className="col-span-3 lg:col-span-2 w-full h-full shadow-xl shadow-gray-400 rounded-xl p-4 md:px-10 md:py-0" >
+          <div className="col-span-3 lg:col-span-2 w-full h-full shadow-xl shadow-gray-400 rounded-xl p-4 md:px-10 md:pt-5" >
             <div className="lg:p-4 h-full ">
               <div>
                 {/* <Image
@@ -32,7 +32,7 @@ function Contact() {
                 </p>
               </div>
               <div>
-                <p className="uppercase pt-8">Connect With Me</p>
+                <p className="uppercase pt-8 pb-4">Connect With Me</p>
                 <div className="flex items-center justify-between py-4">
                   <a
                     href="https://www.linkedin.com/in/diegofeliperosas/"
@@ -62,14 +62,14 @@ function Contact() {
           </div>
 
 
-          <div className="col-span-3 w-full h-auto shadow-xl shadow-gray-400 rounded-xl md:px-10">
+          <div className="col-span-3 w-full h-auto shadow-xl shadow-gray-400 rounded-xl md:px-10 md:py-5">
             <div className="p-4">
               <form
                 action="https://getform.io/f/b49fb9b3-ebfa-411c-81ab-be662e3d90f3"
                 method="POST"
                 // encType='multipart/form-data'
               >
-                <div className="grid md:grid-cols-2 gap-0 md:gap-4 w-full py-0">
+                <div className="grid md:grid-cols-2 gap-0 md:gap-4 w-full py-">
                   <div className="flex flex-col">
                     <label className="uppercase text-sm py-2">Name</label>
                     <input
@@ -89,23 +89,26 @@ function Contact() {
                   </div>
                 </div>
 
-                <div className="flex flex-col ">
-                  <label className="uppercase text-sm py-2">Email</label>
-                  <input
-                    className="border-2 rounded-lg p-2 flex border-gray-300 bg-white"
-                    type="email"
-                    name="email"
-                  />
+                <div className="grid md:grid-cols-2 gap-0 md:gap-4 w-full py-0">
+                  <div className="flex flex-col ">
+                    <label className="uppercase text-sm py-2">Email</label>
+                    <input
+                      className="border-2 rounded-lg p-2 flex border-gray-300 bg-white"
+                      type="email"
+                      name="email"
+                    />
+                  </div>
+
+                  <div className="flex flex-col ">
+                    <label className="uppercase text-sm py-2">Subject</label>
+                    <input
+                      className="border-2 rounded-lg p-2 flex border-gray-300 bg-white"
+                      type="text"
+                      name="subject"
+                    />
+                  </div>                  
                 </div>
 
-                <div className="flex flex-col ">
-                  <label className="uppercase text-sm py-2">Subject</label>
-                  <input
-                    className="border-2 rounded-lg p-2 flex border-gray-300 bg-white"
-                    type="text"
-                    name="subject"
-                  />
-                </div>
 
                 <div className="flex flex-col">
                   <label className="uppercase text-sm py-2">Message</label>
@@ -116,7 +119,7 @@ function Contact() {
                   ></textarea>
                 </div>
 
-                <button className="w-full p-4 text-black mt-4 bg-white">
+                <button className="w-full p-4 text-white mt-4 bg-white">
                   Send Message
                 </button>
                 

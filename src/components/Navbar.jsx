@@ -4,20 +4,20 @@ import React, { useState, useEffect } from "react";
 import { AiOutlineClose, AiOutlineMail, AiOutlineMenu } from "react-icons/ai";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { BsFillPersonLinesFill } from "react-icons/bs";
-import { useRouter } from "next/navigation";
+import { usePathname } from 'next/navigation';
 
 function Navbar() {
   const [nav, setNav] = useState(false);
   const [shadow, setShadow] = useState(false);
   const [navBg, setNavBg] = useState("#ecf0f3");
   const [linkColor, setLinkColor] = useState("#1f2937");
-  const router = useRouter();
-
+  const pathname = usePathname()
+  
   useEffect(() => {
     if (
-      router.asPath === '/pokemon' ||
-      router.asPath === '/rickAndMorty' ||
-      router.asPath === '/viandApp'
+      pathname === '/pokemon' ||
+      pathname === '/rickAndMorty' ||
+      pathname === '/viandApp'
     ) {
       setNavBg('transparent');
       setLinkColor('#ecf0f3');
@@ -25,7 +25,7 @@ function Navbar() {
       setNavBg('#ecf0f3');
       setLinkColor('#1f2937');
     }
-  }, [router]);
+  }, [pathname]);
 
   const handleNav = () => {
     setNav(!nav);
@@ -55,7 +55,7 @@ function Navbar() {
       <div className="flex justify-between items-center w-full h-full px-10 2xl:px-16 ">
         <div>
           <Link href="/">
-            <h1 className='py-4 text-[#3a388e]' >Diego</h1>
+            <h1 className='py-4 text-[#3a388e]' >Diego_</h1>
           </Link>
         </div>
 
@@ -77,7 +77,7 @@ function Navbar() {
               <Link href="/#projects">Projects</Link>
             </li>
 
-            <li className="ml-8 text-sm uppercase border-b-2 border-[#ecf0f3] hover:border-b-2 hover:border-indigo-800">
+            <li className="ml-8 text-sm uppercase border-b-2 border-[#ecf0f300] hover:border-b-2 hover:border-indigo-800">
               <Link href="/#contact">Contact</Link>
             </li> 
           </ul>
