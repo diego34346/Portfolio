@@ -109,13 +109,13 @@ function Navbar() {
           <div>
             <div className="flex w-full items-center justify-between">
               <Link href="/#start">
-              <h1 className='py-4 text-[#3a388e]' >Diego</h1>
+              <h1 className='py-4 text-[#3a388e]' >Diego_</h1>
               </Link>
               <div
                 onClick={handleNav}
                 className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer"
               >
-                <AiOutlineClose />
+                <AiOutlineClose className="text-[#000000]"/>
               </div>
             </div>
             <div className="border-b border-gray-300 my-4"></div>
@@ -124,31 +124,31 @@ function Navbar() {
             <ul className="uppercase">
 
               <Link href="/#start">
-                <li onClick={() => setNav(false)} className="py-4 text-sm">
+                <li onClick={() => setNav(false)} className="py-4 text-sm text-[#1f2937]">
                   Start
                 </li>
               </Link>
 
               <Link href="/#about">
-                <li onClick={() => setNav(false)} className="py-4 text-sm">
+                <li onClick={() => setNav(false)} className="py-4 text-sm text-[#1f2937]">
                   About
                 </li>
               </Link>
 
               <Link href="/#skills">
-                <li onClick={() => setNav(false)} className="py-4 text-sm">
+                <li onClick={() => setNav(false)} className="py-4 text-sm text-[#1f2937]">
                   Skills
                 </li>
               </Link>
 
               <Link href="/#projects">
-                <li onClick={() => setNav(false)} className="py-4 text-sm">
+                <li onClick={() => setNav(false)} className="py-4 text-sm text-[#1f2937]">
                   Projects
                 </li>
               </Link>
               
               <Link href="/#contact">
-                <li onClick={() => setNav(false)} className="py-4 text-sm">
+                <li onClick={() => setNav(false)} className="py-4 text-sm text-[#1f2937]">
                   Contact
                 </li>
               </Link>
@@ -164,7 +164,7 @@ function Navbar() {
                   rel="noreferrer"
                 >
                   <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
-                    <FaLinkedinIn />
+                    <FaLinkedinIn className="text-[#1f2937]"/>
                   </div>
                 </a>
 
@@ -174,7 +174,7 @@ function Navbar() {
                   rel="noreferrer"
                 >
                   <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
-                    <FaGithub />
+                    <FaGithub className="text-[#1f2937]"/>
                   </div>
                 </a>
 
@@ -183,7 +183,7 @@ function Navbar() {
                     onClick={() => setNav(!nav)}
                     className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300"
                   >
-                    <AiOutlineMail />
+                    <AiOutlineMail className="text-[#1f2937]"/>
                   </div>
                 </Link>
 
@@ -192,7 +192,7 @@ function Navbar() {
                     onClick={() => setNav(!nav)}
                     className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300"
                   >
-                    <BsFillPersonLinesFill />
+                    <BsFillPersonLinesFill className="text-[#1f2937]"/>
                   </div>
                 </Link>
 

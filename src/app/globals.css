@@ -11,7 +11,7 @@ html {
 
 @layer base {
   body {
-    @apply  bg-[#f5f6f7] text-[#1f2937] tracking-wide
+    @apply  bg-[#09091b] text-[#ecf0f3] tracking-wide
   }
 
   h1, h2, h3, h4, h5, h6 {
@@ -27,7 +27,11 @@ html {
   }
 
   h3 {
-    @apply text-2xl sm:text-2xl
+    @apply text-xl md:text-2xl
+  }
+
+  h4 {
+    @apply text-xl md:text-2xl
   }
   
   li {
@@ -35,7 +39,7 @@ html {
   }
 
   button {
-    @apply shadow-xl shadow-gray-400 rounded-xl bg-gradient-to-r from-[#3a388e] to-[#3a388e] text-white hover:scale-105 ease-in duration-100
+    @apply rounded-xl bg-gradient-to-r from-[#3a388e] to-[#3a388e] text-white hover:scale-105 ease-in duration-100
   }
 }
 

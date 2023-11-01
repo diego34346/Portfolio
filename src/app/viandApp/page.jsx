@@ -1,12 +1,17 @@
+import { BsCloudCheckFill } from "react-icons/bs"; 
+import { GiDaisy } from "react-icons/gi"; 
+import { SiTailwindcss } from "react-icons/si"; 
+import { SiPrisma } from "react-icons/si";  
+import { FaReact } from "react-icons/fa"; 
+import { TbBrandNextjs } from "react-icons/tb"; 
 import Image from "next/legacy/image";
 import React from 'react';
 import viandappImg from '@/assets/viandapp.png';
-import { RiRadioButtonFill } from 'react-icons/ri';
 import Link from 'next/link';
 
 const viandApp = () => {
   return (
-    <div className='w-full h-full md:h-screen'>
+    <div className='w-full h-full md:h-vh'>
       <div className='w-screen h-[50vh] relative'>
         <div className='absolute top-0 left-0 w-full h-[50vh] bg-black/70 z-10' />
         <Image
@@ -49,25 +54,39 @@ const viandApp = () => {
             <button className='px-8 py-2 mt-4'>Website</button>
           </a>
         </div>
-        <div className='col-span-4 md:col-span-1 shadow-xl shadow-gray-400 rounded-xl py-4'>
+        <div className='col-span-4 md:col-span-1 shadow-[0_5px_10px_1px_rgba(0,0,0,0.3)] shadow-gray-400 rounded-xl py-4'>
           <div className='p-2'>
             <p className='text-center font-bold pb-2'>Technologies</p>
             <div className='grid grid-cols-3 md:grid-cols-1'>
-              <p className='text-gray-600 py-2 flex items-center'>
-                <RiRadioButtonFill className='pr-1' /> Next.js
+              <p className='text-[#ecf0f3] py-2 flex items-center'>
+                <TbBrandNextjs className="mx-3"/> Next.js
               </p>
-              <p className='text-gray-600 py-2 flex items-center'>
-                <RiRadioButtonFill className='pr-1' /> React.js
+
+              <p className='text-[#ecf0f3] py-2 flex items-center'>
+                <FaReact className="mx-3"/> React.js
               </p>
-              <p className='text-gray-600 py-2 flex items-center'>
-                <RiRadioButtonFill className='pr-1' /> Prisma ORM
+
+              <p className='text-[#ecf0f3] py-2 flex items-center'>
+                <SiTailwindcss className="mx-3"/> Tailwind
+              </p>
+
+              <p className='text-[#ecf0f3] py-2 flex items-center'>
+                <GiDaisy className="mx-3"/> Daisy UI
+              </p>
+
+              <p className='text-[#ecf0f3] py-2 flex items-center'>
+                <BsCloudCheckFill className="mx-3"/> Cloudinary
+              </p>
+
+              <p className='text-[#ecf0f3] py-2 flex items-center'>
+                <SiPrisma className="mx-3"/> Prisma ORM
               </p>
               
             </div>
           </div>
         </div>
         <Link href='/#projects'>
-          <p className='text-2xl cursor-pointer'>&lt;&lt; Back</p>
+          <p className='text-2xl cursor-pointer'>&lt; Back</p>
         </Link>
       </div>
     </div>

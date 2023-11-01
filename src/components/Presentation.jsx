@@ -9,16 +9,24 @@ function Presentation() {
     <div id="start" className="w-full h-screen text-center">
       <div className="max-w-[1240px] w-full h-full mx-auto p-2 flex justify-center items-center">
         <div>
-          <p className="uppercase text-sm tracking-widest text-gray-700">
+          <p className="uppercase text-sm tracking-widest text-[#ecf0f3]">
             Transforming ideas into experiences.com
           </p>
-          <h1 className="py-0 md:py-4 text-gray-700">
-          &lt;Hello World!/&gt;  I&#39;m <span className="text-[#3a388e]"> Diego Rosas</span>
-          </h1>
-          <h1 className="py-0 md:py-2 text-gray-700">
+          <div className="flex flex-row flex-wrap justify-center">
+
+            <h1 className="py-0 md:py-4 text-[#ecf0f3]">
+            &lt;Hello World!/&gt;
+            </h1>
+
+            <h1 className="py-0 md:py-4 text-[#ecf0f3]">
+            I&#39;m <span className="text-[#45439f]">Diego Rosas</span> 
+            </h1>
+          </div>
+
+          <h1 className="py-0 md:py-2 text-[#ecf0f3]">
             Web Developer Full Stack_
           </h1>
-          <p className="py-4 text-gray-700 sm:max-w-[70%] m-auto">
+          <p className="py-4 text-[#ecf0f3] sm:max-w-[70%] m-auto">
           Web application development with an interactive and creative approach on the <br/> front-end side, 
           functional and operational on the back-end side_
           </p>
@@ -28,8 +36,8 @@ function Presentation() {
               target="_blank"
               rel="noreferrer"
             >
-              <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
-                <FaLinkedinIn />
+              <div className="rounded-full shadow-[0_0px_10px_3px_rgba(0,0,0,0.3)] shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
+                <FaLinkedinIn className="text-2xl"/>
               </div>
             </a>
             <a
@@ -37,18 +45,18 @@ function Presentation() {
               target="_blank"
               rel="noreferrer"
             >
-              <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
-                <FaGithub />
+              <div className="rounded-full shadow-[0_0px_10px_3px_rgba(0,0,0,0.3)] shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
+                <FaGithub className="text-2xl"/>
               </div>
             </a>
             <Link href="/#contact">
-              <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
-                <AiOutlineMail />
+              <div className="rounded-full shadow-[0_0px_10px_3px_rgba(0,0,0,0.3)] shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
+                <AiOutlineMail className="text-2xl"/>
               </div>
             </Link>
             <Link href="/">
-              <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
-                <BsFillPersonLinesFill />
+              <div className="rounded-full shadow-[0_0px_10px_3px_rgba(0,0,0,0.3)] shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
+                <BsFillPersonLinesFill className="text-2xl"/>
               </div>
             </Link>
           </div>
