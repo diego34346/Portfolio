@@ -31,7 +31,7 @@ html {
   }
 
   h4 {
-    @apply text-xl md:text-2xl
+    @apply text-sm md:text-lg
   }
   
   li {
@@ -39,7 +39,7 @@ html {
   }
 
   button {
-    @apply rounded-xl bg-gradient-to-r from-[#3a388e] to-[#3a388e] text-white hover:scale-105 ease-in duration-100
+    @apply rounded-xl bg-gradient-to-r from-[#3a388e] to-[#3a388e] text-white hover:scale-105 ease-in duration-300
   }
 }
 

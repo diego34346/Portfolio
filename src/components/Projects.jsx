@@ -8,8 +8,8 @@ import Image from "next/image";
 
 function Projects() {
   return (
-    <div id="projects" className="w-full">
-      <div className="max-w-[1240px] mx-auto px-2 py-6 pt-20">
+    <div id="projects" className="w-full h-full md:h-screen flex flex-col md:justify-center items-start md:items-center">
+      <div className="max-w-[1240px] w-full mx-auto flex flex-col justify-center p-2 mt-20 md:mt-0">
         <p className="text-xl md:text-2xl tracking-widest uppercase text-[#5250a4]">
           Projects
         </p>

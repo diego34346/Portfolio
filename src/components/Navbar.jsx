@@ -11,6 +11,7 @@ function Navbar() {
   const [shadow, setShadow] = useState(false);
   const [navBg, setNavBg] = useState("#ecf0f3");
   const [linkColor, setLinkColor] = useState("#1f2937");
+  const [activeLink, setActiveLink] = useState("");
   const pathname = usePathname()
   
   useEffect(() => {
@@ -42,6 +43,11 @@ function Navbar() {
     window.addEventListener("scroll", handleShadow);
   }, []);
 
+  const handleLinkClick = (link) => {
+    setActiveLink(link);
+    setNav(false);
+  };
+
   return (
 
     <div
@@ -52,7 +58,7 @@ function Navbar() {
           : "fixed w-full h-20 z-[100]"
       }
     >
-      <div className="flex justify-between items-center w-full h-full px-10 2xl:px-16 ">
+      <div className="flex justify-between items-center w-full h-full px-10 2xl:px-16">
         <div>
           <Link href="/">
             <h1 className='py-4 text-[#3a388e]' >Diego_</h1>
@@ -61,25 +67,35 @@ function Navbar() {
 
         <div>
           <ul style={{ color: `${linkColor}` }} className="hidden md:flex">
-            <li className="ml-10 text-sm uppercase hover:border-b-2 hover:border-indigo-800">
-              <Link href="/#start">Start</Link>
+            <li className={`ml-10 text-sm uppercase ${activeLink === 'start' ? 'border-b-2 border-indigo-800' : ''}`}>
+              <Link href="/#start">
+                <p onClick={() => handleLinkClick('start')}>Start</p>
+              </Link>
             </li>
 
-            <li className="ml-8 text-sm uppercase hover:border-b-2 hover:border-indigo-800">
-              <Link href="/#about">About</Link>
+            <li className={`ml-8 text-sm uppercase ${activeLink === 'about' ? 'border-b-2 border-indigo-800' : ''}`}>
+              <Link href="/#about">
+                <p onClick={() => handleLinkClick('about')}>About</p>
+              </Link>
             </li>
 
-            <li className="ml-8 text-sm uppercase hover:border-b-2 hover:border-indigo-800">
-              <Link href="/#skills">Skills</Link>
+            <li className={`ml-8 text-sm uppercase ${activeLink === 'skills' ? 'border-b-2 border-indigo-800' : ''}`}>
+              <Link href="/#skills">
+                <p onClick={() => handleLinkClick('skills')}>Skills</p>
+              </Link>
             </li>
 
-            <li className="ml-8 text-sm uppercase hover:border-b-2 hover:border-indigo-800">
-              <Link href="/#projects">Projects</Link>
+            <li className={`ml-8 text-sm uppercase ${activeLink === 'projects' ? 'border-b-2 border-indigo-800' : ''}`}>
+              <Link href="/#projects">
+                <p onClick={() => handleLinkClick('projects')}>Projects</p>
+              </Link>
             </li>
 
-            <li className="ml-8 text-sm uppercase border-b-2 border-[#ecf0f300] hover:border-b-2 hover:border-indigo-800">
-              <Link href="/#contact">Contact</Link>
-            </li> 
+            <li className={`ml-8 text-sm uppercase ${activeLink === 'contact' ? 'border-b-2 border-indigo-800' : ''}`}>
+              <Link href="/#contact">
+                <p onClick={() => handleLinkClick('contact')}>Contact</p>
+              </Link>
+            </li>
           </ul>
         </div>
 

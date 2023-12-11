@@ -9,7 +9,7 @@ import Link from 'next/link';
 
 const pokemon = () => {
   return (
-    <div className='w-full h-full md:h-screen'>
+    <div className='w-full h-full md:h-vh'>
       <div className='w-screen h-[50vh] relative'>
         <div className='absolute top-0 left-0 w-full h-[50vh] bg-black/70 z-10' />
         <Image

@@ -15,11 +15,11 @@ function Presentation() {
           <div className="flex flex-row flex-wrap justify-center">
 
             <h1 className="py-0 md:py-4 text-[#ecf0f3]">
-            &lt;Hello World!/&gt;
+            &lt;Hello World!/&gt; 
             </h1>
 
             <h1 className="py-0 md:py-4 text-[#ecf0f3]">
-            I&#39;m <span className="text-[#45439f]">Diego Rosas</span> 
+             I&#39;m <span className="text-[#45439f]">Diego Rosas</span> 
             </h1>
           </div>
 
@@ -36,7 +36,7 @@ function Presentation() {
               target="_blank"
               rel="noreferrer"
             >
-              <div className="rounded-full shadow-[0_0px_10px_3px_rgba(0,0,0,0.3)] shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
+              <div className="rounded-full hover:shadow-[0_0px_10px_3px_rgba(0,0,0,0.3)] hover:shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
                 <FaLinkedinIn className="text-2xl"/>
               </div>
             </a>
@@ -45,17 +45,17 @@ function Presentation() {
               target="_blank"
               rel="noreferrer"
             >
-              <div className="rounded-full shadow-[0_0px_10px_3px_rgba(0,0,0,0.3)] shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
+              <div className="rounded-full hover:shadow-[0_0px_10px_3px_rgba(0,0,0,0.3)] hover:shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
                 <FaGithub className="text-2xl"/>
               </div>
             </a>
             <Link href="/#contact">
-              <div className="rounded-full shadow-[0_0px_10px_3px_rgba(0,0,0,0.3)] shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
+              <div className="rounded-full hover:shadow-[0_0px_10px_3px_rgba(0,0,0,0.3)] hover:shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
                 <AiOutlineMail className="text-2xl"/>
               </div>
             </Link>
             <Link href="/">
-              <div className="rounded-full shadow-[0_0px_10px_3px_rgba(0,0,0,0.3)] shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
+              <div className="rounded-full hover:shadow-[0_0px_10px_3px_rgba(0,0,0,0.3)] hover:shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
                 <BsFillPersonLinesFill className="text-2xl"/>
               </div>
             </Link>
