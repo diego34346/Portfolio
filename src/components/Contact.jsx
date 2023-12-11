@@ -7,15 +7,15 @@ import { HiOutlineChevronDoubleUp } from "react-icons/hi";
 
 function Contact() {
   return (
-    <div id="contact" className="w-full h-full md:h-screen flex md:justify-center items-start md:items-center">
-      <div className="max-w-[1240px] w-full h-full mx-auto px-2 py-2 flex flex-col justify-center mt-20">
-        <p className="text-xl md:text-2xl tracking-widest uppercase text-[#5250a4]">
+    <div id="contact" className="w-full h-full md:h-screen flex justify-start items-start 2xl:justify-center 2xl:items-center">
+      <div className="max-w-[1240px] w-full mx-auto px-2 py-2 flex flex-col justify-center mt-20 2xl:mt-0">
+        <p className="text-xl md:text-2xl tracking-widest uppercase text-[#5250a4] 2xl:text-[35px]">
           Contact
         </p>
         <h2 className="py-4">Get In Touch</h2>
         <div className="grid md:grid-cols-5 gap-8">
           <div className="col-span-3 md:col-span-2 w-full h-full shadow-[0_5px_10px_1px_rgba(0,0,0,0.3)] shadow-gray-400 rounded-xl p-4 md:px-10 md:pt-5" >
-            <div className="h-full ">
+            <div className="h-full px-8 pt-4 md:px-8 md:pt-4">
               <div>
                 {/* <Image
                   className='rounded-xl hover:scale-105 ease-in duration-300'
@@ -24,9 +24,9 @@ function Contact() {
                 /> */}
               </div>
               <div>
-                <h2 className="py- text-[#45439f]">Diego Rosas</h2>
+                <h2 className=" text-[#45439f]">Diego Rosas</h2>
                 <p>Web Developer full Stack</p>
-                <p className="py-4">
+                <p className="">
                   I am available for freelance, full-time or part-time positions. Contact
                   me and let&apos;s talk.
                 </p>
@@ -39,7 +39,7 @@ function Contact() {
                     target="_blank"
                     rel="noreferrer"
                   >
-                    <div className="rounded-full shadow-[0_0px_10px_3px_rgba(0,0,0,0.3)] shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
+                    <div className="rounded-full hover:shadow-[0_0px_10px_3px_rgba(0,0,0,0.3)] hover:shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
                       <FaLinkedinIn className="text-2xl"/>
                     </div>
                   </a>
@@ -48,12 +48,12 @@ function Contact() {
                     target="_blank"
                     rel="noreferrer"
                   >
-                    <div className="rounded-full shadow-[0_0px_10px_3px_rgba(0,0,0,0.3)] shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
+                    <div className="rounded-full hover:shadow-[0_0px_10px_3px_rgba(0,0,0,0.3)] hover:shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
                       <FaGithub className="text-2xl"/>
                     </div>
                   </a>
 
-                  <div className="rounded-full shadow-[0_0px_10px_3px_rgba(0,0,0,0.3)] shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
+                  <div className="rounded-full hover:shadow-[0_0px_10px_3px_rgba(0,0,0,0.3)] hover:shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
                     <BsWhatsapp className="text-2xl"/>
                   </div>
                 </div>
@@ -63,7 +63,7 @@ function Contact() {
 
 
           <div className="col-span-3 w-full h-auto shadow-[0_5px_10px_1px_rgba(0,0,0,0.3)] shadow-gray-400 rounded-xl md:px-10 md:py-5">
-            <div className="p-4 md:p-0">
+            <div className="px-8 py-4 md:p-0">
               <form
                 action="https://getform.io/f/b49fb9b3-ebfa-411c-81ab-be662e3d90f3"
                 method="POST"

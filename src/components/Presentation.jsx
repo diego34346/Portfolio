@@ -6,9 +6,9 @@ import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 
 function Presentation() {
   return (
-    <div id="start" className="w-full h-screen text-center">
+    <div id="start" className="w-full h-screen text-center ">
       <div className="max-w-[1240px] w-full h-full mx-auto p-2 flex justify-center items-center">
-        <div>
+        <div className="bigScreen">
           <p className="uppercase text-sm tracking-widest text-[#ecf0f3]">
             Transforming ideas into experiences.com
           </p>
