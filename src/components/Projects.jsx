@@ -3,6 +3,7 @@ import ProjectItem from "./ProjectItem";
 import pokemonImg from "../assets/pokemon.png";
 import rickandmortyImg from "../assets/rickandmorty.png";
 import viandappImg from "../assets/viandapp.png";
+import gaiaEcotrack from "../assets/gaiaEcotrack.png";
 import cvImg from "../assets/cv.png";
 import Image from "next/image";
 
@@ -15,6 +16,14 @@ function Projects() {
         </p>
         <h2 className="py-4 2xl:text-[45px]">What I&apos;ve Built</h2>
         <div className="grid md:grid-cols-3 2xl:grid-cols-2 gap-8 2xl:gap-x-20">
+
+          <ProjectItem
+            title="Gaia Eco-track"
+            backgroundImg={gaiaEcotrack}
+            projectUrl="/gaiaEcotrack"
+            tech="React.js"
+          />
+
           <ProjectItem
             title="ViandApp"
             backgroundImg={viandappImg}
@@ -34,14 +43,7 @@ function Projects() {
             backgroundImg={pokemonImg}
             projectUrl="/pokemon"
             tech="React.js"
-          />
-          
-          <ProjectItem
-            title="Api Pokemon"
-            backgroundImg={pokemonImg}
-            projectUrl="/pokemon"
-            tech="React.js"
-          />
+          />         
 
           <div className="relative flex items-center justify-center h-full w-full shadow-[0_0px_15px_4px_rgba(0,0,0,0.3)] shadow-gray-400 rounded-xl group hover:bg-gradient-to-r from-[#090921] to-[#ffffff] 2xl:w-[80%] 2xl:ml-[10%]">
             <Image

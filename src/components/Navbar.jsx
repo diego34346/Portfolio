@@ -18,7 +18,8 @@ function Navbar() {
     if (
       pathname === '/pokemon' ||
       pathname === '/rickAndMorty' ||
-      pathname === '/viandApp'
+      pathname === '/viandApp' ||
+      pathname === '/gaiaEcotrack'
     ) {
       setNavBg('transparent');
       setLinkColor('#ecf0f3');

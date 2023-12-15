@@ -6,10 +6,10 @@ import { FaReact } from "react-icons/fa";
 import { TbBrandNextjs } from "react-icons/tb"; 
 import Image from "next/legacy/image";
 import React from 'react';
-import viandappImg from '@/assets/viandapp.png';
+import gaiaEcotrack from '@/assets/gaiaEcotrack.png';
 import Link from 'next/link';
 
-const viandApp = () => {
+const gaiEcotrack = () => {
   return (
     <div className='w-full h-full md:h-vh'>
       <div className='w-screen h-[50vh] relative'>
@@ -18,13 +18,13 @@ const viandApp = () => {
           className='absolute z-1'
           layout='fill'
           objectFit='cover'
-          src={viandappImg}
-          alt='viandapp'
+          src={gaiaEcotrack}
+          alt='gaiaEcotrack'
           priority={true}
           rel="preload"
         />
         <div className='absolute top-[70%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-white z-10 p-2'>
-          <h2 className='py-2'>ViandApp</h2>
+          <h2 className='py-2'>Gaia Eco-track</h2>
           <h3>Next.js</h3>
         </div>
       </div>
@@ -40,14 +40,14 @@ const viandApp = () => {
             be able to view property information as well as the specific          
           </p>
           <a
-            href='https://github.com/ProyectoFinal-Henry/Vianda-app'
+            href='https://github.com/ilichb/VaraEnergy'
             target='_blank'
             rel='noreferrer'
           >
             <button className='px-8 py-2 mt-4 mr-8'>Github</button>
           </a>
           <a
-            href='https://vianda-app.vercel.app/'
+            href='https://gaia-front-3-0.vercel.app/'
             target='_blank'
             rel='noreferrer'
           >
@@ -93,4 +93,4 @@ const viandApp = () => {
   );
 };
 
-export default viandApp;
+export default gaiEcotrack;

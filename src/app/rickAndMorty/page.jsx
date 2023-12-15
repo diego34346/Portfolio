@@ -76,7 +76,7 @@ const rickAndMorty = () => {
           </div>
         </div>
         <Link href='/#projects'>
-          <p className='text-2xl cursor-pointer'>&lt; Back</p>
+          <button className='text-2xl cursor-pointer text-white font-bold w-32'> Back</button>
         </Link>
       </div>
     </div>

@@ -15,10 +15,11 @@ function Presentation() {
           <div className="flex flex-row flex-wrap justify-center">
 
             <h1 className="py-0 md:py-4 text-[#ecf0f3]">
-            &lt;Hello World!/&gt; 
+            &lt;Hello World!  /&gt; 
             </h1>
 
             <h1 className="py-0 md:py-4 text-[#ecf0f3]">
+            <span>&nbsp;</span> { }
              I&#39;m <span className="text-[#45439f]">Diego Rosas</span> 
             </h1>
           </div>
