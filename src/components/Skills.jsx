@@ -1,3 +1,4 @@
+import { IoLogoPython } from "react-icons/io"; 
 import { SiHiveBlockchain } from "react-icons/si"; 
 import { FaRust } from "react-icons/fa"; 
 import { SiExpress } from "react-icons/si"; 
@@ -175,6 +176,17 @@ function Skills() {
               </div>
               <div className='flex flex-col items-center justify-center bigScreen'>
                 <h4>Blockchain</h4>
+              </div>
+            </div>
+          </div>
+
+          <div className='p-6 pl-3 shadow-[0_5px_10px_1px_rgba(0,0,0,0.3)] shadow-gray-400 rounded-xl hover:scale-105 ease-in duration-300'>
+            <div className='grid grid-cols md:grid-cols-2 gap-0 justify-center items-center'>
+              <div className='m-auto bigScreen'>
+                <IoLogoPython className="h-12 w-12 md:h-16 md:w-16"/>
+              </div>
+              <div className='flex flex-col items-center justify-center bigScreen'>
+                <h4>PYTHON</h4>
               </div>
             </div>
           </div>

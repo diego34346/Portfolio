@@ -44,7 +44,7 @@ const rickAndMorty = () => {
             <button className='px-8 py-2 mt-4 mr-8'>Github</button>
           </a>
           <a
-            href='https://rick-and-morty-diego.vercel.app/'
+            href='https://rickandmorty-d.vercel.app'
             target='_blank'
             rel='noreferrer'
           >
